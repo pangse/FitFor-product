@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for for FitFor UI'
+define service ZXE3_SD_FITFOR_V2 {
+  expose ZXE3_C_FITFOR_V2 as FitFor;
+}

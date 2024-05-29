@@ -1,0 +1,20 @@
+managed implementation in class zbp_xe3_i_fitfor_v2 unique;
+strict ( 2 );
+
+define behavior for ZXE3_I_FITFOR_V2 alias FitFor
+persistent table zxe3_fitfor_v2
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) Werks, ProducedPro, FitforPro;
+  mapping for zxe3_fitfor_v2
+    {
+      Werks         = werks;
+      ProducedPro   = produced_pro;
+      FitforPro    = fitfor_pro;
+      Priority      = priority;
+    }
+ }
